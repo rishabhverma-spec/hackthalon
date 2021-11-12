@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    /* display:flex;
+    align-items: center;
+    justify-content: center; */
+    perspective: 1000px;
+}
+
+/****************/
+/*NAVIGATION BAR*/
+/****************/
+
+.navigationBar {
+    border-radius: 10px;
+    background-color: rgba(161, 63, 112, 0.0) !important;
+    /*border:3px solid rgba(108,196,190,1);*/
+}
+
+li a {
+    /* color:rgba(253, 98, 175,1) !important;*/
+    color: white !important;
+    font-size: 20px;
+    transition: all .1s ease-in-out;
+}
+
+li a:hover {
+    color: white !important;
+    /* box-shadow: 1px 1px 2px 0 #888888;*/
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+/*****************/
+/*/NAVIGATION BAR*/
+/*****************/
+
+/***************/
+/*IIT/JEE Cards*/
+/***************/
+.jee-neet-container {
+    background: white;
+    display: flex;
+    justify-content: center;
+}
+
+.jee-neet {
+    background: grey;
+    width: 95vw;
+    height: 550px;
+    padding: 20px 200px 0 200px;
+}
+
+.card-jee-neet {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    transform-style: preserve-3d;
+    height: 500px;
+    width: 400px;
+    border-radius: 30px;
+    padding: 10px 0 0 20px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+.graphic-jee {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient( to right, rgba(245, 70, 66, 0.75), rgba(8, 83, 156, 0.75));
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.title-card-jee-neet {
+    width: auto;
+    font-size: 25px;
+    padding: 10px 0px 0 0;
+    transition: all 0.75s ease-out;
+}
+
+.info-card-jee-neet h3 {
+    font-size: 14px;
+    padding: 5px 0 0 0;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+/****************/
+/*/IIT/JEE Cards*/
+/****************/

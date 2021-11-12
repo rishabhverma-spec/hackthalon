@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>U.I.E.T</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top py-2 m-2 navigationBar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav m-auto  navigationBarItems">
+                <li class="nav-item active mr-2">
+                    <a class="nav-link" href="#"><i class='fas fa-home'></i> Home </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class='fas fa-tasks'></i> Aim </a>
+                </li>
+                <!--
+              <li class="nav-item active">
+                <a class="nav-link" href="#"><i class='fas fa-users'></i> About Us &nbsp;</a>
+              </li>
+              -->
+                <li class="nav-item active ml-2">
+                    <a class="nav-link" href="#"><i class='fas fa-comment-dots'></i> Contact Us </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- /Navigation Bar -->
+
+    <!-- Welcome Image -->
+    <div class="container-fluid p-0">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/home/welcome.jpg" alt="Los Angeles" style="width:100%;">
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!-- /Welcome Image -->
+
+    <!-- IIT/JEE Cards -->
+    <div class="jee-neet-container">
+      <div class="jee-neet">
+          <!-- Card -->
+          <div class="card-jee-neet">
+              <div class="title-card-jee-neet">
+                  <h1>JEE Main/Advanced</h1>
+              </div>
+              <div class="graphic-jee">
+                  <div class="circle"></div>
+              </div>
+              <div class="info-card-jee-neet">
+                  <h3>The Joint Entrance Examination is an engineering entrance assessment conducted for admission to various engineering colleges in India. It is constituted by two different examinations: the JEE Main and the JEE Advanced.</h3>
+              </div>
+          </div>
+          <!-- /Card -->
+      </div>
+    </div>
+    <!-- /IIT/JEE Cards -->
+    <script src="./js/home.js"></script>
+</body>
+
+</html>
