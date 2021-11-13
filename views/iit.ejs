@@ -6,14 +6,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="./css/home.css">
+    <link rel="stylesheet" type="text/css" href="./css/iit.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
 </head>
 
-<body>
+<body style="background:lightgray">
     <!--Navigation Bar-->
     <nav class="navbar navbar-expand-sm navbar-light fixed-top py-2 m-2 navigationBar">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -22,7 +27,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav m-auto  navigationBarItems">
                 <li class="nav-item active mr-2">
-                    <a class="nav-link" href="#"><i class='fas fa-home'></i> Home </a>
+                    <a class="nav-link" href="/"><i class='fas fa-home'></i> Home </a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="/aim"><i class='fas fa-tasks'></i> Aim </a>
@@ -40,13 +45,12 @@
     </nav>
     <!-- /Navigation Bar -->
 
-    <!-- Welcome Image -->
     <div class="container-fluid p-0">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="images/home/welcome.jpg" alt="Los Angeles" style="width:100%;">
+                    <img src="images/home/iit.jpg" alt="Los Angeles" style="width:100%;">
                 </div>
             </div>
             <!-- Left and right controls -->
@@ -60,52 +64,39 @@
             </a>
         </div>
     </div>
-    <!-- /Welcome Image -->
-    <!-- IIT/JEE Cards -->
-    <div class="jee-neet-container">
-        <a href="/iit">
-      <div class="jee-neet">
-        <h1 class="jee-neet-heading">Choose Your Domain</h1>
-        <div class="cards-jee-neet">
-          <!-- JEE Card -->
-          <div class="card-jee-neet">
-              <div class="title-card-jee-neet">
-                  <h1>JEE Main/Advanced</h1>
-              </div>
-              <div class="graphic-jee-neet">
-                  <img src="./images/jee_card.png">
-              </div>
-              <div class="info-card-jee-neet">
-                  <h3><span>The Joint Entrance Examination is an engineering entrance assessment conducted for admission to various engineering colleges in India. It is constituted by two different examinations: the JEE Main and the JEE Advanced.</span></h3>
-              </div>
-          </div>
-        </a>
-          <!-- /Card -->
-          <!-- NEET Card -->
-          <a href="/neet">
-          <div class="card-jee-neet">
-              <div class="title-card-jee-neet">
-                  <h1>NEET</h1>
-              </div>
-              <div class="graphic-jee-neet">
-                  <img src="./images/neet_card.png">
-              </div>
-              <div class="info-card-jee-neet">
-                  <h3>The National Eligibility Entrance Test (NEET), formerly the All India Pre-Medical Test (AIPMT), is the qualifying test for MBBS and BDS programmes in Indian medical and dental colleges.The examination, which offers 90,000 seats in MBBS and BDS Colleges of India, is conducted in the month of May every year.</h3>
-              </div>
-          </div>
-          </a>
-          <!-- /Card -->
-          </div>
-      </div>
+
+    <div class="container">
+        <div class="row bg-white content justify-content-center ">
+            <h4 class="mt-2 border-bottom border-primary border-bottom-0 jee-selection-heading">Fill in
+                the required details !</h4>
+            <div class="col-12 p-4">
+                <center>
+                   
+                    <select id="state">
+                        <option value="1">All India</option>
+                        <option value="2"></option>
+                        <option value="3">Delhi</option>
+                        <option value="4">Haryana</option>
+                      </select>
+                      <select id="counselling">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                      </select>
+                      <a class="btn message" onclick="myFunction()">Submit</a>
+                </center>
+            </div>
+            <div class="mb-5" id="dynamic">Details will be displayed Here !</div>
+        </div>
     </div>
-    <!-- /IIT/JEE Cards -->
     <!-- Footer -->
     <div class="footer">
-      <p>Copyright & Copy; 2025-www.Student-Counselling-Notes.com-All rights reserved</p>
-    </div>
-    <!-- /Footer -->
-    <script src="./js/home.js"></script>
+        <p>Copyright & Copy; 2025-www.Student-Counselling-Notes.com-All rights reserved</p>
+      </div>
+      <!-- /Footer -->
+    <script src="./js/iit.js">
+    </script>
 </body>
 
 </html>

@@ -50,6 +50,11 @@ li a:hover {
     height: 800px;
 }
 
+a{
+    text-decoration: inherit !important;
+    color:#212529 !important;
+}
+
 
 .jee-neet {
     display: flex;
@@ -69,7 +74,7 @@ li a:hover {
 
 .jee-neet-heading {
     overflow: hidden; 
-    border-right: .15em solid orange; 
+    border-right: .1em solid orange; 
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .1em; 
