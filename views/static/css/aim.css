@@ -59,7 +59,6 @@ li a:hover {
     background: white;
     width: 95vw;
     height: inherit;
-    padding: 40px 0px 40px 0px;
     border-radius: 10px 10px 10px 10px;
     z-index: 1;
     position: absolute;
@@ -105,11 +104,13 @@ li a:hover {
     height: 550px;
     width: 400px;
     border-radius: 30px;
-    padding: 20px 0 0 20px;
     margin: 0 30px 0 30px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
 
+.aim-padding{
+     padding: 40px 0px 40px 0px;
+}
 
 /****************/
 /*/IIT/JEE Cards*/
@@ -122,6 +123,10 @@ li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.footer-fix{
+     margin-top: 35rem;
 }
 
 .footer p {
@@ -156,6 +161,15 @@ li a:hover {
     align-items: center;
 }
 
+.contact-image{
+    background-image: url("../images/home/Aim.jpeg");
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .aim-header{
     color: white;
     text-transform: capitalize;
@@ -164,9 +178,26 @@ li a:hover {
     height: 150px;
 }
 
+.contact-color{
+    color: black;
+}
+
+
+.aim-width{
+    width: 720px;
+}
+
+.aim-width{
+    left: 58px;
+}
+
+.contact-width{
+     width: 754px;
+}
+
 .aim-header h2{
     font-size: 150px;
-    animation: aim-movement 0.6s ease-out ;
+    animation: aim-movement 1s ease-out ;
     position: absolute;
     top: 0;
     left: 0;
@@ -184,20 +215,131 @@ li a:hover {
         top : 140px
     }
     25%{
-        opacity: 0;
+        opacity: 0.3;
         top: 100px
     }
     60%{
-        opacity: 0;
+        opacity: 0.5;
         top : 50px;
     }
 
     75%{
-        opacity: 0.5;
+        opacity: 0.7;
         top: 25px;
     }
     100%{
         opacity: 1;
         top:0px;
     }
+}
+
+/* contact  */
+
+/* .contact-form{
+    display: flex;
+    width: 40%;
+    margin :0 auto;
+    flex-direction: column;
+}
+
+/* .contact-form-label{
+    height:30px;
+    color: black;
+} */
+
+/* .contact-form-label{
+    font-size: 40px;
+} */
+
+/* .contact-form-input{
+    border:none;
+    border-bottom: 2px solid black;
+    outline: none;
+    padding: 0 0 10px 10px;
+} */ 
+
+div.right {
+	background-color: black;
+	background-color: white;
+	/*background-color: #FFBB17;*/
+	color: black;
+	/* padding: 80px 0 0 80px; */
+	/*font-size: 100px;*/
+}
+
+div.right p {
+	margin: 0 0 0 0;
+	padding: 0px 150px 0 0;
+	font-size: 36px;
+    font-weight: 400;
+    letter-spacing: .1em; 
+}
+
+div.right h1 {
+	margin: 0px 0 0 0;
+	margin-bottom: 0;
+	font-size: 60px;
+    font-weight: bold;
+}
+
+/*INPUT FIELDS*/
+/**************/
+
+div.fill {
+	padding: 30px 0 0 0;
+}
+
+div.right input {
+	padding: 10px 0 10px 10px;
+	outline: none;
+	border: none;
+	border-bottom: 3px solid black;
+	background: white;
+	width: 80%;
+	font-size: 20px;
+}
+
+.contact-query{
+	margin: 15px 0 0 0;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid black;
+}
+
+input::placeholder {
+	color: black;
+}
+
+textarea::placeholder{
+    color: black;
+    padding: 10px 0 10px 10px;
+    font-size:20px
+}
+
+/*LOGIN BUTTON*/
+/**************/
+
+.contact-btn {
+	margin: 30px 20px 0 0;
+	padding: 10px 30px 10px 30px;
+	background-color: #000;
+    color:white;
+    border-radius:25px;
+	/*background-color: #0afc47;*/
+}
+
+/*shadow*/
+
+.contact-btn {
+box-shadow: 1px 1px 20px -10px rgba(40,40,40,0.75);
+}
+
+.contact-btn:hover{
+    color:white !important;
+}
+/*input field animation */
+
+
+.contact-margin{
+    margin: 15px 0 0 0;
 }
