@@ -4,6 +4,7 @@
 <head>
     <title>U.I.E.T</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/iit.css">
@@ -72,17 +73,16 @@
             <div class="col-12 p-4">
                 <center>
                    
-                    <select id="state">
-                        <option value="1">All India</option>
-                        <option value="2"></option>
-                        <option value="3">Delhi</option>
-                        <option value="4">Haryana</option>
+                    <select id="state" onmouseout="state()">
+                        <% for (var i = 0; i < 10; i++) { %>
+                            <option>
+                               <%= d[i].state %>
+                            </option>
+                            <% } %>
                       </select>
                       <select id="counselling">
-                        <option value="1"></option>
-                        <option value="2"></option>
-                        <option value="3"></option>
-                        <option value="4"></option>
+                       <option  id="one">Select State First</option>
+                       <option id="two"></option>
                       </select>
                       <a class="btn message" onclick="myFunction()">Submit</a>
                 </center>
