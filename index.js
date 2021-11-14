@@ -18,13 +18,13 @@ var con = mysql.createConnection({
      app.get('/iit', function(req, res){
       res.render("iit",{d:result});
     });
+    app.get('/neet', function(req, res){
+      res.render("neet",{d:result});
+   });
    });
  });
  app.get('/', function(req, res){
    res.render("home") ;
-});
-app.get('/neet', function(req, res){
-   res.render("neet");
 });
 app.get('/aim', function(req, res){
    res.render("aim");

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>U.I.E.T</title>
+    <title>Student Counselling</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
@@ -72,17 +72,17 @@
             <div class="col-12 p-4">
                 <center>
                     <select id="state" onmouseout="state()">
-                        <% for (var i = 0; i < 10; i++) { %>
+                        <% for (var i=0; i < 10; i++) { %>
                             <option>
-                               <%= d[i].state %>
+                                <%= d[i].state %>
                             </option>
                             <% } %>
-                      </select>
-                      <select id="counselling">
-                       <option  id="one">Select State First</option>
-                       <option id="two"></option>
-                      </select>
-                      <a class="btn message" onclick="myFunction()">Submit</a>
+                    </select>
+                    <select id="counselling">
+                        <option id="one">Select State First</option>
+                        <option id="two"></option>
+                    </select>
+                    <a class="btn message" onclick="myFunction()">Submit</a>
                 </center>
             </div>
             <div class="mb-5" id="dynamic">Details will be displayed Here !</div>
@@ -90,9 +90,9 @@
     </div>
     <!-- Footer -->
     <div class="footer">
-        <p>Copyright & Copy; 2025-www.Student-Counselling-Notes.com-All rights reserved</p>
-      </div>
-      <!-- /Footer -->
+        <p>&copy; 2021-2025 Student Counseling. All rights reserved.</p>
+    </div>
+    <!-- /Footer -->
     <script src="./js/neet.js">
     </script>
 </body>
