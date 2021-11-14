@@ -1,3 +1,5 @@
+# Team Name : Geeky Trio / Squad
+
 # The Problem
 Since every year the entrance exams are held and always there is a constant hustle around millions of students to get their desired seat. And here, counselling plays a major role in admissions to any of the colleges in India.
 
@@ -32,8 +34,6 @@ We decided to build a web app, a one-stop destination to solve all this chaos. W
 
 
 
-
-# Team Name : Geeky Squad
 ### Technology Stack used:
 - HTML
 - CSS
